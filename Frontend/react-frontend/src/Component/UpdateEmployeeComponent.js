@@ -69,7 +69,7 @@ export default function UpdateEmployeeComponent(props)
                 <form>
                   <div className="form-group my-2">
                     <label>First Name:</label>
-                    <input placeholder="First Name" name="firstName" className="form-control"
+                    <input placeholder=" First Name" name="firstName" className="form-control"
                            value={firstName} onChange={(e)=> setFirstName(e.target.value)}/>
                   </div>
                   <div className="form-group my-2">

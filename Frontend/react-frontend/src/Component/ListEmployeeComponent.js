@@ -63,7 +63,7 @@ deleteEmployee=(employeeId)=>
                             <td>{employee.email}</td>
                             <td>
                                          
-                  <Link to="/update-employee/1" className="btn btn-warning" >Edit</Link>  
+                  <Link to= {"/update-employee/"+employee.id} className="btn btn-warning" >Edit</Link>  
                   <button className='btn btn-danger' style={{marginLeft:"15px"}} onClick={()=> this.deleteEmployee(employee.id)}>Delete</button>
                                           
                                       </td> 

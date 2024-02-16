@@ -1,5 +1,4 @@
-
-import React, { Component, useState } from 'react'
+import React, {useState } from 'react'
 import { useNavigate } from 'react-router-dom';
 import EmployeeService from '../Service/EmployeeService';
 
@@ -7,7 +6,7 @@ import EmployeeService from '../Service/EmployeeService';
 export default function CreateEmployeeComponent()
 {
   
-    let navigate = useNavigate();
+  let navigate = useNavigate();
     
     const [employee,setEmployee]=useState({
         firstName:"",

@@ -6,28 +6,33 @@ import FooterComponent from './Component/FooterComponent';
 import {BrowserRouter as Router,Routes, Route} from 'react-router-dom';
 import CreateEmployeeComponent from './Component/CreateEmployeeComponent';
 import UpdateEmployeeComponent from './Component/UpdateEmployeeComponent';
+import Login from './Component/Login';
 
 
 function App() {
   return (
-    <div>
-
-    <HeaderComponent/>
-
     <Router>
+    <div>
+     
+    <HeaderComponent/>
+    
 
-<div className="container">
+
+
   <Routes>
-      <Route exact path="/" Component={ListEmployeeComponent}></Route>
+      <Route exact path ="/" element={<Login/>}></Route>
+      <Route path="/login" element={<Login/>}></Route>
+    {/* <Route exact path="/" Component={ListEmployeeComponent}></Route> */}
       <Route path="/employees" Component={ListEmployeeComponent}></Route>
       <Route path="/add-employee" element={<CreateEmployeeComponent/>}></Route>
       <Route path="/update-employee/:id" element={<UpdateEmployeeComponent/>}></Route>
   </Routes>	
-</div>
-</Router>
+
+
     <FooterComponent/>
 
     </div> 
+    </Router>
   );
 }
 
